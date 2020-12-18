@@ -47,12 +47,12 @@ body {
 }
 
 .form-wrapper {
-    max-width: 270px;
-    padding: 32px 0 32px 30px;
+    max-width: 299px;
+    padding: 32px 30px;
 }
 
 .form-field {
-    max-width: 240px;
+    width: 100%;
     height: 35px;
     border: 1px solid #b6b6b6;
     border-radius: 2px;

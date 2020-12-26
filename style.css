@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5a6fc7;
+    min-height: 100vh;
+}
+
+.open {
+    display: block;
+    cursor: pointer;
+    padding: 12px 37px;
+    background-color: #f36069;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+}
+
+.open:hover {
+    background-color: #ca4c54;
+}
+
+.wrapper {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 480px;
+    min-height: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.wrapper-show {
+    display: flex;
+}
+
+.form-wrapper {
+    max-width: 299px;
+    padding: 32px 30px;
+}
+
+.form-field {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #b6b6b6;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    padding-left: 11px;
+    font-size: 14px;
+    color: #000;
+}
+
+.form-field::placeholder {
+    color: #b6b6b6;
+}
+
+.form-submit {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 12px 37px;
+    background-color: #f36069;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+}
+
+.form-submit:hover {
+    background-color: #ca4c54;
+}
+
+.registration {
+    padding: 32px 50px 0 0;
+}
+
+.sign-up-block {
+    margin-bottom: 14px;
+}
+
+.description {
+    font-size: 12px;
+    color: #828282;
+    margin-bottom: -3px;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    color: #f3616a;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.exit {
+    content: "";
+    position: absolute;
+    background-color: #f36069;
+    border-radius: 0 5px 0 5px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    right: 0;
+    top: 0;
+}
+
+.exit:hover {
+    background-color: #ca4c54;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+        padding: 42px 32px;
+    }
+
+    .form-field {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .form-submit {
+        width: 100%;
+    }
+
+    .registration {
+        padding: 0 32px 32px;
+    }
+}

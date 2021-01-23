@@ -110,7 +110,6 @@ body {
 }
 
 .exit {
-    content: "";
     position: absolute;
     background-color: #f36069;
     border-radius: 0 5px 0 5px;
